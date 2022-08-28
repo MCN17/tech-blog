@@ -1,1 +1,18 @@
-<div>Testing Testing</div>
+<ol class="post-list">
+    {{#each posts as |post|}}
+  <li>
+    <article class="post">
+      <div class="title">
+        <a href="{{post.post_content}}" target="_blank">{{post.title}}</a>
+        <p>{{post.post_content}}</p>
+      </div>
+      <div class="meta">
+      by {{user.username}} on
+        {{post.created_at}}
+        {{!-- <a href="/post/{{id}}">{{post.comments.length}} comment(s)</a> --}}
+        {{!-- <p>{{comments}}TEST</p> --}}
+      </div>
+    </article>
+  </li>
+  {{/each}}
+</ol>
