@@ -1,12 +1,14 @@
-{{> post-info post }}
+<div class="ml-3">
+    <h5>{{> post-info post }}</h5>
+</div>
 
 {{#if loggedIn}}
-<form class="comment-form">
-    <div>
-        <textarea name="comment-body"></textarea>
+<form class="comment-form col-3">
+    <div class="mb-2 mt-2">
+        <textarea class="form-control" rows="5" name="comment-body"></textarea>
     </div>
     <div>
-        <button type="submit">Submit</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
     </div>
 </form>
 {{/if}}

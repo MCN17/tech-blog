@@ -1,17 +1,17 @@
 <section>
-    <h2>Create New Post</h2>
+    <h3 class="ml-3 text-center">Create New Post</h3>
 
-    <form class="new-post-form">
-        <div>
-            <label for="post-title">Title</label>
-            <input type="text" id="post-title" name="post-title">
-        </div>
-        <div>
-            <label for="post-content">Content</label>
-            <input id="post-content" name="post-content">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+   <form class="new-post-form col-3">
+  <div class="form-group">
+    <label for="post-title"><h5>Title</h5></label>
+    <input class="form-control" id="post-title" name="post-title" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="post-content"><h5>Content</h5></label>
+    <input class="form-control" id="post-content" name="post-content">
+  </div>
+  <button type="submit" class="btn btn-primary mb-5">Submit</button>
+</form>
 </section>
 
 {{#if posts.length}}
@@ -29,3 +29,4 @@
 {{/if}}
 
 <script src="/javascript/add-post.js"></script>
+
